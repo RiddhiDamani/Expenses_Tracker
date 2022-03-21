@@ -24,7 +24,11 @@ const inital_expenses = [
   },
 ];
 const App = () => {
+  // passing dummy expenses as initial state value - using destructuring
+
   const [expenses, setExpenses] = useState(inital_expenses);
+
+  // adding new expenses
   const addExpenseHandler = (expense) => {
     setExpenses((previousExpenses) => {
       return [expense, ...previousExpenses];
