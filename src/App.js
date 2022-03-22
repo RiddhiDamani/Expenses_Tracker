@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import Expenses from "./components/Expenses/Expenses";
 import NewExpense from "./components/NewExpense/NewExpense";
+import Header from "./components/Header/Header";
+import Footer from "./components/Footer/Footer";
 
 const inital_expenses = [
   {
@@ -19,7 +21,7 @@ const inital_expenses = [
   {
     id: "e4",
     title: "New Desk (Wooden)",
-    amount: 450,
+    amount: 450.15,
     date: new Date(2021, 5, 12),
   },
 ];
@@ -37,8 +39,10 @@ const App = () => {
 
   return (
     <div>
+      <Header />
       <NewExpense onAddExpense={addExpenseHandler} />
       <Expenses items={expenses} />
+      <Footer />
     </div>
   );
 };

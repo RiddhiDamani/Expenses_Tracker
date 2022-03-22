@@ -11,7 +11,7 @@ const ExpensesChart = (props) => {
     { monthLabel: "Jun", value: 0 },
     { monthLabel: "Jul", value: 0 },
     { monthLabel: "Aug", value: 0 },
-    { monthLabel: "Sept", value: 0 },
+    { monthLabel: "Sep", value: 0 },
     { monthLabel: "Oct", value: 0 },
     { monthLabel: "Nov", value: 0 },
     { monthLabel: "Dec", value: 0 },
